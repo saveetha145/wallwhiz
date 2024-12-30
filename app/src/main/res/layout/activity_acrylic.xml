@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background1"
+    android:background="@drawable/background_img"
     tools:context=".AcrylicActivity">
 
     <View
@@ -20,6 +20,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
 
+
     <TextView
         android:id="@+id/desgin"
         android:layout_width="wrap_content"
@@ -31,32 +32,34 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@id/view"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@id/view"
-        app:layout_constraintVertical_bias="0.168" />
+        app:layout_constraintVertical_bias="0.137" />
 
     <TextView
         android:id="@+id/acrylic"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
+        android:fontFamily="@font/titan_one"
         android:text="ACRYLIC FRAMES"
         android:textColor="@android:color/black"
         android:textSize="23sp"
         android:textStyle="bold"
-        app:layout_constraintTop_toTopOf="@id/view"
         app:layout_constraintBottom_toBottomOf="@id/view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
-
+        app:layout_constraintTop_toTopOf="@id/view"
+        app:layout_constraintVertical_bias="0.416" />
 
     <ImageView
         android:id="@+id/logo"
         android:layout_width="56dp"
         android:layout_height="44dp"
         android:layout_marginTop="168dp"
-        android:src="@drawable/logo"
+        android:src="@drawable/logo_img"
         app:layout_constraintBottom_toTopOf="@+id/a"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -69,7 +72,7 @@
         android:layout_width="367dp"
         android:layout_height="499dp"
         android:layout_marginTop="76dp"
-        android:src="@drawable/a"
+        android:src="@drawable/acrylic_img"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

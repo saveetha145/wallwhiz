@@ -9,7 +9,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class ProfileActivity extends AppCompatActivity {
+public class editActivity extends AppCompatActivity {
 
     private Button changeProfileButton, submitButton, button2, button4;
     private TextView edit;
@@ -41,7 +41,7 @@ public class ProfileActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // Handle submit button click
-                Toast.makeText(ProfileActivity.this, "Profile updated successfully", Toast.LENGTH_SHORT).show();
+                Toast.makeText(editActivity.this, "Profile updated successfully", Toast.LENGTH_SHORT).show();
             }
         });
     }

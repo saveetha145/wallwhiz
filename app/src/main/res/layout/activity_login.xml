@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg"
+    android:background="@drawable/logoblur_img"
     tools:context=".login">
 
     <View
@@ -26,6 +26,7 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:text="LOGIN"
+        android:fontFamily="@font/titan_one"
         android:textColor="@android:color/black"
         android:textSize="24sp"
         android:textStyle="bold"
@@ -39,7 +40,7 @@
         android:layout_width="56dp"
         android:layout_height="44dp"
         android:layout_marginTop="20dp"
-        android:src="@drawable/logo"
+        android:src="@drawable/logo_img"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.518"

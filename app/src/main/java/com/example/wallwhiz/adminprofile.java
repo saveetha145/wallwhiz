@@ -10,7 +10,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class DeliveryActivity extends AppCompatActivity implements View.OnClickListener {
+public class adminActivity extends AppCompatActivity implements View.OnClickListener {
 
     private Button button, btnBack, btnNext, btnSelect;
     private TextView adminProfile, textView18;
@@ -20,7 +20,7 @@ public class DeliveryActivity extends AppCompatActivity implements View.OnClickL
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_admin2);
+        setContentView(R.layout.activity_adminprofile);
 
         // Initialize views
         button = findViewById(R.id.button);
@@ -56,7 +56,7 @@ public class DeliveryActivity extends AppCompatActivity implements View.OnClickL
             @Override
             public void onClick(View v) {
                 // Navigate to the next activity
-                Intent intent = new Intent(AdminActivity.this, ProfileActivity.class);
+                Intent intent = new Intent(ProfileActivity.this, ProfileActivity.class);
                 startActivity(intent);
             }
         });

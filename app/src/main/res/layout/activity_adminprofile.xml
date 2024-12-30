@@ -5,8 +5,8 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background1"
-    tools:context=".">
+    android:background="@drawable/background_img"
+    tools:context=".adminActivity">
 
 
     <View
@@ -42,7 +42,7 @@
         android:layout_width="56dp"
         android:layout_height="44dp"
         android:layout_marginTop="12dp"
-        android:src="@drawable/logo"
+        android:src="@drawable/logo_img"
         app:layout_constraintBottom_toTopOf="@+id/imageView3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -57,7 +57,7 @@
         android:layout_height="79dp"
         android:layout_gravity="center_horizontal"
         android:contentDescription="Profile Image"
-        android:src="@drawable/admin"
+        android:src="@drawable/admin_img"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="234dp" />
@@ -68,7 +68,6 @@
         android:layout_height="260dp"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.45"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button">
 
@@ -79,7 +78,10 @@
             android:layout_marginBottom="8dp"
             android:backgroundTint="@android:color/darker_gray"
             android:text="Admin Name"
-            android:textColor="@android:color/black" />
+            android:textColor="@android:color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            />
 
         <Button
             android:id="@+id/pw"

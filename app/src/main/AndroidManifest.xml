@@ -13,10 +13,10 @@
         android:theme="@style/Theme.WallWhiz"
         tools:targetApi="31">
         <activity
-            android:name=".orderlist_1"
+            android:name=".adminActivity"
             android:exported="false" />
         <activity
-            android:name="."
+            android:name=".orderlist_1"
             android:exported="false" />
         <activity
             android:name=".ReviewActivity"
@@ -28,7 +28,7 @@
             android:name=".OrderListActivity"
             android:exported="false" />
         <activity
-            android:name=".ProfileActivity"
+            android:name=".editActivity"
             android:exported="false" />
         <activity
             android:name=".TruckActivity"
