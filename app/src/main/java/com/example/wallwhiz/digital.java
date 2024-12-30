@@ -9,10 +9,10 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 
-public class DigitalActivity extends AppCompatActivity {
+class digitalActivity extends AppCompatActivity {
 
     private Button btnBack, btnNext, btnSelect;
-    private ImageView logo, imageView;
+    private ImageView logo, imageView = findViewById(R.id.a);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,7 +24,6 @@ public class DigitalActivity extends AppCompatActivity {
         btnNext = findViewById(R.id.btnnext);
         btnSelect = findViewById(R.id.btnselect);
         logo = findViewById(R.id.logo);
-        imageView = findViewById(R.id.a);
 
 
         btnBack.setOnClickListener(new View.OnClickListener() {
@@ -38,7 +37,7 @@ public class DigitalActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(DigitalActivity.this, MosaicActivity.class);
+                Intent intent = new Intent(digitalActivity.this, mosaicActivity.class);
                 startActivity(intent);
             }
         });

@@ -1,4 +1,4 @@
-package com.example.wallwhiz.;
+package com.example.wallwhiz;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,9 +9,9 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatButton;
 
-import com.example.wallwhiz.ar;
+import com.example.wallwhiz.ARVisualizationActivity;
 
-public class OilPaintingActivity extends AppCompatActivity {
+class OilPaintingActivity extends AppCompatActivity {
 
     private ImageView logo, oilPaintingImage;
     private AppCompatButton btnBack, btnNext, btnSelect;
@@ -19,38 +19,36 @@ public class OilPaintingActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_oil); // Ensure this is the correct layout file name
+        setContentView(R.layout.activity_oil);
 
-        // Initialize views
+
         logo = findViewById(R.id.logo);
         oilPaintingImage = findViewById(R.id.a);
         btnBack = findViewById(R.id.btnback);
         btnNext = findViewById(R.id.btnnext);
         btnSelect = findViewById(R.id.btnselect);
 
-        // Set click listeners for buttons
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                finish(); // Finish the current activity and return to the previous one
+                finish();
             }
         });
 
         btnNext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                navigateToNextActivity(); // Navigate to the next activity
+                navigateToNextActivity();
             }
         });
 
         btnSelect.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                selectOilPainting(); // Handle the oil painting selection
+                selectOilPainting();
             }
         });
 
-        // Optional: Set a click listener for the oil painting image
         oilPaintingImage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -59,16 +57,12 @@ public class OilPaintingActivity extends AppCompatActivity {
         });
     }
 
-    // Method to navigate to the next activity
     private void navigateToNextActivity() {
-        // Replace 'NextActivity' with the actual activity class you want to navigate to
-        Intent intent = new Intent(OilPaintingActivity.this, ar.class);
+        Intent intent = new Intent(OilPaintingActivity.this, ARVisualizationActivity.class);
         startActivity(intent);
     }
 
-    // Method to handle the selection of oil painting
     private void selectOilPainting() {
         Toast.makeText(this, "Oil Painting selected", Toast.LENGTH_SHORT).show();
-        // Add additional logic here if needed, such as saving the selection or updating the UI
     }
 }

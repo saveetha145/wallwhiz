@@ -9,7 +9,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-public class TruckActivity extends AppCompatActivity {
+class TruckActivity extends AppCompatActivity {
 
     private Button btnBack, btnNext;
     private TextView detailsTitle;
@@ -20,7 +20,7 @@ public class TruckActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_truck);
 
-        // Initialize views
+
         btnBack = findViewById(R.id.btnback);
         btnNext = findViewById(R.id.appCompatButton);
         detailsTitle = findViewById(R.id.payment);
@@ -28,7 +28,6 @@ public class TruckActivity extends AppCompatActivity {
         imageView = findViewById(R.id.imageView);
         truckImage = findViewById(R.id.truck_image);
 
-        // Set click listeners for buttons
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -40,7 +39,7 @@ public class TruckActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // Navigate to the next activity
-                Intent intent = new Intent(TruckActivity.this, review.class);
+                Intent intent = new Intent(TruckActivity.this, reviewActivity.class);
                 startActivity(intent);
             }
         });

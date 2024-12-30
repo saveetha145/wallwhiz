@@ -11,7 +11,7 @@ import androidx.appcompat.widget.AppCompatButton;
 
 import com.example.wallwhiz.OrderActivity;
 
-public class ARVisualizationActivity extends AppCompatActivity {
+class ARVisualizationActivity extends AppCompatActivity {
 
     private FrameLayout rectangles;
     private Button btnAdjust, btnPosition;

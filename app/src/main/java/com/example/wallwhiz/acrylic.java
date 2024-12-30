@@ -9,7 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatButton;
 
 
-public class AcrylicActivity extends AppCompatActivity {
+class acrylicActivity extends AppCompatActivity {
 
     private ImageView logo, imageA;
     private AppCompatButton btnBack, btnNext, btnSelect;
@@ -49,14 +49,14 @@ public class AcrylicActivity extends AppCompatActivity {
         imageA.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(AcrylicActivity.this, "Frame A selected", Toast.LENGTH_SHORT).show();
+                Toast.makeText(acrylicActivity.this, "Frame A selected", Toast.LENGTH_SHORT).show();
             }
         });
     }
 
     private void goToNextActivity() {
         Toast.makeText(this, "Navigating to the next screen...", Toast.LENGTH_SHORT).show();
-        Intent intent = new Intent(AcrylicActivity.this, GlassActivity.class);
+        Intent intent = new Intent(acrylicActivity.this, glassActivity.class);
         startActivity(intent);
     }
 

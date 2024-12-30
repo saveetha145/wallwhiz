@@ -1,4 +1,4 @@
-package com.example.wallwhiz.;
+package com.example.wallwhiz;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -11,7 +11,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatButton;
 
 
-public class SizeActivity extends AppCompatActivity {
+class sizeActivity extends AppCompatActivity {
 
     private EditText sizeSelector;
     private ImageView first, two, three, four, five, six, seven, eight, nine;
@@ -130,7 +130,7 @@ public class SizeActivity extends AppCompatActivity {
         } else {
             Toast.makeText(this, "Navigating to the next screen...", Toast.LENGTH_SHORT).show();
             // Navigate to the next activity
-            Intent intent = new Intent(SizeActivity.this, acrylic.class);
+            Intent intent = new Intent(sizeActivity.this, acrylicActivity.class);
             intent.putExtra("selectedSize", selectedSize);
             startActivity(intent);
         }

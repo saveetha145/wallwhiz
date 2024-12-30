@@ -10,7 +10,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class adminActivity extends AppCompatActivity implements View.OnClickListener {
+abstract class adminActivity extends AppCompatActivity implements View.OnClickListener {
 
     private Button button, btnBack, btnNext, btnSelect;
     private TextView adminProfile, textView18;
@@ -37,7 +37,6 @@ public class adminActivity extends AppCompatActivity implements View.OnClickList
         reviews = findViewById(R.id.reco);
         update = findViewById(R.id.up);
 
-        // Set click listeners for buttons
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -56,7 +55,7 @@ public class adminActivity extends AppCompatActivity implements View.OnClickList
             @Override
             public void onClick(View v) {
                 // Navigate to the next activity
-                Intent intent = new Intent(ProfileActivity.this, ProfileActivity.class);
+                Intent intent = new Intent(adminActivity.this, editActivity.class);
                 startActivity(intent);
             }
         });

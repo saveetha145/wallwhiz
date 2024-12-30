@@ -9,7 +9,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class editActivity extends AppCompatActivity {
+class editActivity extends AppCompatActivity {
 
     private Button changeProfileButton, submitButton, button2, button4;
     private TextView edit;
@@ -20,7 +20,6 @@ public class editActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_editprofile);
 
-        // Initialize views
         changeProfileButton = findViewById(R.id.changeProfileButton);
         submitButton = findViewById(R.id.submitButton);
         button2 = findViewById(R.id.button2);
@@ -29,18 +28,15 @@ public class editActivity extends AppCompatActivity {
         logo = findViewById(R.id.logo);
         profileImage = findViewById(R.id.profileImage);
 
-        // Set click listeners for buttons
         changeProfileButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Handle change profile button click
             }
         });
 
         submitButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Handle submit button click
                 Toast.makeText(editActivity.this, "Profile updated successfully", Toast.LENGTH_SHORT).show();
             }
         });

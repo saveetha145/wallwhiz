@@ -1,5 +1,6 @@
 package com.example.wallwhiz;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -10,22 +11,21 @@ import androidx.appcompat.widget.AppCompatButton;
 
 public class forget extends AppCompatActivity {
 
-    // Declare the views
     private EditText emailEditText;
     private AppCompatButton btn_ResetPassword;
     private AppCompatButton btnCancel;
 
+    @SuppressLint({"MissingInflatedId", "WrongViewCast"})
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_forget);
 
-        // Initialize the views
         emailEditText = findViewById(R.id.btn_email);
         btn_ResetPassword = findViewById(R.id.btnResetPass);
-        btnCancel = findViewById(R.id.btnCancel); // Corrected variable name
+        btnCancel= findViewById(R.id.btn_cancel);
 
-        // Reset password button listener
+
         btn_ResetPassword.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -37,16 +37,16 @@ public class forget extends AppCompatActivity {
                     return;
                 }
 
-                // Call your method to handle password reset
+
                 resetPassword(email);
             }
         });
 
-        // Cancel button listener
+
         btnCancel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Navigate back to the previous activity
+
                 onBackPressed();
             }
         });

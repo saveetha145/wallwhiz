@@ -8,7 +8,7 @@ import android.widget.Toast;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class signupActivity extends AppCompatActivity {
+class signupActivity extends AppCompatActivity {
 
     private EditText etName, etPhoneEmail, etPassword, etConfirmPassword;
     private Button btnSubmit;

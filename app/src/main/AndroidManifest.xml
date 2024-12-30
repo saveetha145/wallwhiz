@@ -16,10 +16,7 @@
             android:name=".adminActivity"
             android:exported="false" />
         <activity
-            android:name=".orderlist_1"
-            android:exported="false" />
-        <activity
-            android:name=".ReviewActivity"
+            android:name=".reviewActivity"
             android:exported="false" />
         <activity
             android:name=".UpdateActivity"
@@ -34,7 +31,7 @@
             android:name=".TruckActivity"
             android:exported="false" />
         <activity
-            android:name=".DeliveryActivity"
+            android:name=".deliveryActivity"
             android:exported="false" />
         <activity
             android:name=".OrderActivity"
@@ -49,25 +46,25 @@
             android:name=".WoodenArtActivity"
             android:exported="false" />
         <activity
-            android:name=".MosaicActivity"
+            android:name=".mosaicActivity"
             android:exported="false" />
         <activity
-            android:name=".DigitalActivity"
+            android:name=".digitalActivity"
             android:exported="false" />
         <activity
-            android:name=".PencilArtActivity"
+            android:name=".pencilrtactivity"
             android:exported="false" />
         <activity
-            android:name=".WoodenFrameActivity"
+            android:name=".woodenframeActivity"
             android:exported="false" />
         <activity
-            android:name=".GlassActivity"
+            android:name=".glassActivity"
             android:exported="false" />
         <activity
-            android:name=".AcrylicActivity"
+            android:name=".acrylicActivity"
             android:exported="false" />
         <activity
-            android:name=".SizeActivity"
+            android:name=".sizeActivity"
             android:exported="false" />
         <activity
             android:name=".UploadActivity"

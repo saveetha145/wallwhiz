@@ -10,7 +10,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class OrderListActivity extends AppCompatActivity {
+class OrderListActivity extends AppCompatActivity {
 
     private Button btnBack, btnNext;
     private TextView adminProfile, textView7, textView8;
@@ -21,7 +21,6 @@ public class OrderListActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_orderlist);
 
-        // Initialize views
         btnBack = findViewById(R.id.btnback);
         btnNext = findViewById(R.id.btnnext);
         adminProfile = findViewById(R.id.admin_profile);
@@ -30,7 +29,6 @@ public class OrderListActivity extends AppCompatActivity {
         logo = findViewById(R.id.logo);
         imageView4 = findViewById(R.id.imageView4);
 
-        // Set click listeners for buttons
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -41,8 +39,7 @@ public class OrderListActivity extends AppCompatActivity {
         btnNext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Navigate to the next activity
-                Intent intent = new Intent(OrderListActivity.this, update.class);
+                Intent intent = new Intent(OrderListActivity.this, UpdateActivity.class);
                 startActivity(intent);
             }
         });

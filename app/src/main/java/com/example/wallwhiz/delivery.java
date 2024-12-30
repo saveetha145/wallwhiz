@@ -9,10 +9,10 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-public class DeliveryActivity extends AppCompatActivity implements View.OnClickListener {
+abstract class deliveryActivity extends AppCompatActivity implements View.OnClickListener {
 
     private Button btnBack, btnNext, btnSelect;
-    private TextView delivery, customizeFrameText, details, phn, altphn, add, land, payment;
+    private TextView delivery = findViewById(R.id.admin_profile), customizeFrameText, details, phn, altphn, add, land, payment;
     private ImageView logo, gpay, scanner;
 
     @Override
@@ -24,7 +24,6 @@ public class DeliveryActivity extends AppCompatActivity implements View.OnClickL
         btnBack = findViewById(R.id.btnback);
         btnNext = findViewById(R.id.btnnext);
         btnSelect = findViewById(R.id.btnselect);
-        delivery = findViewById(R.id.admin_profile);
         customizeFrameText = findViewById(R.id.customize_frame_text);
         details = findViewById(R.id.details);
         phn = findViewById(R.id.phn);
@@ -47,7 +46,7 @@ public class DeliveryActivity extends AppCompatActivity implements View.OnClickL
         btnNext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(DeliveryActivity.this, TruckActivity.class);
+                Intent intent = new Intent(deliveryActivity.this, TruckActivity.class);
                 startActivity(intent);
             }
         });

@@ -11,7 +11,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class GlassActivity extends AppCompatActivity {
+class glassActivity extends AppCompatActivity {
 
     private Button btnBack, btnNext, btnSelect;
     private TextView desgin;
@@ -22,7 +22,6 @@ public class GlassActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_glass);
 
-        // Initialize views
         btnBack = findViewById(R.id.btnback);
         btnNext = findViewById(R.id.btnnext);
         btnSelect = findViewById(R.id.btnselect);
@@ -30,7 +29,6 @@ public class GlassActivity extends AppCompatActivity {
         logo = findViewById(R.id.logo);
         a = findViewById(R.id.a);
 
-        // Set click listeners for buttons
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -41,8 +39,8 @@ public class GlassActivity extends AppCompatActivity {
         btnNext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Navigate to the next activity
-                Intent intent = new Intent(GlassActivity.this, WoodenFrameActivity.class);
+
+                Intent intent = new Intent(glassActivity.this, woodenframeActivity.class);
                 startActivity(intent);
             }
         });
@@ -50,7 +48,7 @@ public class GlassActivity extends AppCompatActivity {
         btnSelect.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Handle select button click
+
             }
         });
     }

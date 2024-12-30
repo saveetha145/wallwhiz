@@ -79,7 +79,7 @@
         android:id="@+id/two"
         android:layout_width="98dp"
         android:layout_height="95dp"
-        android:src="@drawable/Two"
+        android:src="@drawable/two"
         tools:layout_editor_absoluteX="152dp"
         tools:layout_editor_absoluteY="238dp" />
 

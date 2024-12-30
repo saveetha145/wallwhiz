@@ -1,4 +1,4 @@
-package com.example.wallwhiz.;
+package com.example.wallwhiz;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -11,7 +11,7 @@ import androidx.appcompat.widget.AppCompatButton;
 
 import com.example.wallwhiz.WoodenArtActivity;
 
-public class MosaicActivity extends AppCompatActivity {
+                class mosaicActivity extends AppCompatActivity {
 
     private ImageView logo, mosaicImage;
     private AppCompatButton btnBack, btnNext, btnSelect;
@@ -54,7 +54,7 @@ public class MosaicActivity extends AppCompatActivity {
         mosaicImage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(MosaicActivity.this, "Mosaic Art selected", Toast.LENGTH_SHORT).show();
+                Toast.makeText(mosaicActivity.this, "Mosaic Art selected", Toast.LENGTH_SHORT).show();
             }
         });
     }
@@ -62,7 +62,7 @@ public class MosaicActivity extends AppCompatActivity {
 
     private void navigateToNextActivity() {
 
-        Intent intent = new Intent(MosaicActivity.this, WoodenArtActivity.class);
+        Intent intent = new Intent(mosaicActivity.this, WoodenArtActivity.class);
         startActivity(intent);
     }
 

@@ -1,4 +1,4 @@
-package com.example.wallwhiz.;
+package com.example.wallwhiz;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,9 +9,9 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatButton;
 
-import com.example.wallwhiz.oil;
+import com.example.wallwhiz.OilPaintingActivity;
 
-public class WoodenArtActivity extends AppCompatActivity {
+class WoodenArtActivity extends AppCompatActivity {
 
     private ImageView logo, woodenArtImage;
     private AppCompatButton btnBack, btnNext, btnSelect;
@@ -19,38 +19,38 @@ public class WoodenArtActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_woodenart); // Ensure this is the correct layout file name
+        setContentView(R.layout.activity_woodenart);
 
-        // Initialize views
+
         logo = findViewById(R.id.logo);
         woodenArtImage = findViewById(R.id.a);
         btnBack = findViewById(R.id.btnback);
         btnNext = findViewById(R.id.btnnext);
         btnSelect = findViewById(R.id.btnselect);
 
-        // Set click listeners for buttons
+
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                finish(); // Finish the current activity and return to the previous one
+                finish();
             }
         });
 
         btnNext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                navigateToNextActivity(); // Navigate to the next activity
+                navigateToNextActivity();
             }
         });
 
         btnSelect.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                selectWoodenArt(); // Handle the wooden art selection
+                selectWoodenArt();
             }
         });
 
-        // Optional: Set a click listener for the wooden art image
+
         woodenArtImage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -59,16 +59,16 @@ public class WoodenArtActivity extends AppCompatActivity {
         });
     }
 
-    // Method to navigate to the next activity
+
     private void navigateToNextActivity() {
-        // Replace 'NextActivity' with the actual activity class you want to navigate to
-        Intent intent = new Intent(WoodenArtActivity.this, oil.class);
+
+        Intent intent = new Intent(WoodenArtActivity.this, OilPaintingActivity.class);
         startActivity(intent);
     }
 
-    // Method to handle the selection of wooden art
+
     private void selectWoodenArt() {
         Toast.makeText(this, "Wooden Art selected", Toast.LENGTH_SHORT).show();
-        // Add additional logic here if needed, such as saving the selection or updating the UI
+
     }
 }

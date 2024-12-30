@@ -9,7 +9,7 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-public class ReviewActivity extends AppCompatActivity {
+class reviewActivity extends AppCompatActivity {
 
     private Button submitButton;
     private EditText comments;
@@ -35,13 +35,13 @@ public class ReviewActivity extends AppCompatActivity {
 
                 // Validate comments
                 if (comment.isEmpty()) {
-                    Toast.makeText(ReviewActivity.this, "Please enter your comments", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(reviewActivity.this, "Please enter your comments", Toast.LENGTH_SHORT).show();
                     return;
                 }
 
                 // Submit review (API call or database operation)
                 // For demonstration purposes, just display a toast message
-                Toast.makeText(ReviewActivity.this, "Review submitted successfully", Toast.LENGTH_SHORT).show();
+                Toast.makeText(reviewActivity.this, "Review submitted successfully", Toast.LENGTH_SHORT).show();
             }
         });
     }
